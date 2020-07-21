@@ -1,0 +1,10 @@
+!#/bin/bash
+
+git status
+git add .
+read -p "Enter commit number: " num1
+git commit -m "commit $num1"  
+git push origin -u master
+git status
+
+exit
