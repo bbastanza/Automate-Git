@@ -2,12 +2,13 @@
 
 echo "New Git Project"
 git init
-git status
 git add -A
+git status
 git commit -m "first commit"
 read -p "Enter Github Link: " linkvar
 git remote add origin $linkvar
 git push -u origin master
+git status
 echo "Done"
 
 exit
