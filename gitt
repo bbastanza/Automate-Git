@@ -1,5 +1,9 @@
-!#/bin/bash
 
+#!/bin/bash
+
+
+read -p "Which GIT: " fold
+cd Development/git/$fold
 git status
 git add .
 read -p "Enter commit number: " num1

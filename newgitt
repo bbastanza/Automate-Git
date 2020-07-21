@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 echo "New Git Project"
 git init
