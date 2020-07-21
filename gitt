@@ -4,8 +4,8 @@
 
 read -p "Which GIT: " fold
 cd Development/git/$fold
-git status
 git add .
+git status
 read -p "Enter commit number: " num1
 git commit -m "commit $num1"  
 git push origin -u master
