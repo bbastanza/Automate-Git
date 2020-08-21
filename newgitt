@@ -1,10 +1,24 @@
 #!/bin/bash
 
+# this is a simple script to make a new git project for use with  html, css and javascript
+
+# upon running the script will create a new Directory, initalize git, make an initial commit and push it to github
+# to the link you specify
+
+# to use this script replace all *directory-path* with your absolute path to the parent directory to your git projects
+
+
 echo "New Git Project"
+ls /*directory-path*/
+read -p "New Git Directory: " dirvar
+mkdir /*directory-path*/$dirvar
+cd /*directory-path*/$dirvar
+touch script.js style.css index.html README.md
+mkdir MDimages images
 git init
 git add -A
 git status
-git commit -m "first commit"
+git commit -m "initial commit"
 read -p "Enter Github Link: " linkvar
 git remote add origin $linkvar
 git push -u origin master

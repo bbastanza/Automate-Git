@@ -1,20 +1,12 @@
 
 #!/bin/bash
 
-# replace all *directory-path* with your absolute path
-
-
-ls *directory-path*
-
+ls /home/stanzu10/Development/git
 read -p "Which git directory: " folder
-
-cd *directory-path*$folder
-
+cd /home/stanzu10/Development/git/$folder
 git branch
 read -p "Which branch: " branch
-
-cd *directory-path*$folder
-
+cd /home/stanzu10/Development/git/$folder
 git add .
 git status
 read -p "Enter commit name: " commitname
