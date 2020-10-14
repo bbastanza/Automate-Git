@@ -1,6 +1,6 @@
 # Automate Git
 
-> Two bash scripts to automate creating a new project folder with git initalized and to automate commiting.
+> Two bash scripts to automate creating a new project folder with git initalized and to automate commiting in the Linux bash terminal.
 
 ## CreateGitProject
 
