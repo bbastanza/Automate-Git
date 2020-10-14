@@ -9,12 +9,11 @@
 
 
 echo "New Git Project"
-ls /*directory-path*/
+ls <Enter Git Directory Here>
 read -p "New Git Directory: " dirvar
-mkdir /*directory-path*/$dirvar
-cd /*directory-path*/$dirvar
-touch script.js style.css index.html README.md
-mkdir MDimages images
+mkdir <Enter Git Directory Here>$dirvar
+cd <Enter Git Directory Here>$dirvar
+touch README.md
 git init
 git add -A
 git status

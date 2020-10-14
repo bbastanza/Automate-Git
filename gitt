@@ -1,12 +1,12 @@
 
 #!/bin/bash
 
-ls /home/stanzu10/Development/git
+ls <Enter Git Directory Here>
 read -p "Which git directory: " folder
-cd /home/stanzu10/Development/git/$folder
+cd <Enter Git Directory Here>$folder
 git branch
 read -p "Which branch: " branch
-cd /home/stanzu10/Development/git/$folder
+cd <Enter Git Directory Here>$folder
 git add .
 git status
 read -p "Enter commit name: " commitname
