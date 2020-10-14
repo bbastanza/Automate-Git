@@ -1,14 +1,12 @@
 
 #!/bin/bash
 
-# This is a simple script to automate pushing new commits to GitHub
-
-ls <Enter Git Directory Here>
+ls /home/stanzu10/Development/git
 read -p "Which git directory: " folder
-cd <Enter Git Directory Here>$folder
+cd <ENTER-PATH-TO-GIT-<ENTER-PATH-TO-GIT-DIRECTORY>DIRECTORY>$folder
 git branch
 read -p "Which branch: " branch
-cd <Enter Git Directory Here>$folder
+cd /home/stanzu10/Development/git/$folder
 git add .
 git status
 read -p "Enter commit name: " commitname
