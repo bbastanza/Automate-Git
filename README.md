@@ -15,8 +15,8 @@ Automates making git commits from any location.
 You can create a directory in called `~/bin` or you can place these files in your `/usr/local/bin` if you want all users to have access to these commands. Place these two files in that directory and cd into that directory in the terminal. Run the following commands.
 
 ```
-chmod+x CreateGitProject
-chmod+x AutomateCommit
+chmod +x CreateGitProject
+chmod +x AutomateCommit
 ```
 
 This will make them executable from the bash terminal. Run `updatedb` to update the command database.
