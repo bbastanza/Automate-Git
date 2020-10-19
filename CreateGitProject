@@ -13,14 +13,15 @@ ls <Enter Git Directory Here>
 read -p "New Git Directory: " dirvar
 mkdir <Enter Git Directory Here>$dirvar
 cd <Enter Git Directory Here>$dirvar
-touch README.md
+touch .gitignore README.md
 git init
 git add -A
 git status
 git commit -m "initial commit"
+git branch -M main
 read -p "Enter Github Link: " linkvar
 git remote add origin $linkvar
-git push -u origin master
+git push -u origin main
 git status
 echo "Done"
 
