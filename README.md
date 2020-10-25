@@ -27,3 +27,6 @@ Now you can use these commands calling there names
 CreateGitProject
 AutomateCommit
 ```
+
+
+<a href="https://www.brianbastanza.me/" target="_blank" rel="noopener">Personal Website</a>
