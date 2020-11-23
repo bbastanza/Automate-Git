@@ -28,6 +28,27 @@ createGit
 automate	
 ```
 
+You must edit the file to add the path to the directory that contains your git projects. This is exactly what mine looks like
 
+```
+#!/bin/bash
+
+ls /home/stanzu10/Dev/git
+read -p "Which git directory: " FOLDER
+cd /home/stanzu10/Dev/git/$FOLDER
+git branch
+read -p "Which branch: " BRANCH
+cd /home/stanzu10/Dev/git/$FOLDER
+git add .
+git status
+read -p "Enter commit name: " COMMIT
+read -p "Description? (press enter or add description): " DESCRIPTION
+
+git commit -m "commit $COMMIT" -m "$DESCRIPTION"  
+git push origin -u $BRANCH
+git status
+
+exit
+```
 
 <a href="https://www.brianbastanza.me/" target="_blank" rel="noopener">Personal Website</a>
