@@ -4,16 +4,25 @@
 # This is a simple script to automate pushing new commits to GitHub
 
 ls <Enter Git Directory Here>
-read -p "Which git directory: " folder
-cd <Enter Git Directory Here>$folder
+read -p "Which git directory: " FOLDER
+cd <Enter Git Directory Here>/$FOLDER
 git branch
-read -p "Which branch: " branch
-cd <Enter Git Directory Here>$folder
+read -p "Which branch: " BRANCH
+cd <Enter Git Directory Here>/$FOLDER
 git add .
 git status
-read -p "Enter commit name: " commitname
-git commit -m "commit $commitname"  
-git push origin -u $branch
+read -p "Enter commit name: " COMMIT
+git commit -m "commit $COMMIT"  
+
+read -p "Description? (press enter of add description): " DESCRIPTION
+
+if [ $DESCRIPTION != "" ]
+then
+	DESCRIPTION="-m ${DESCRIPTION}"
+fi
+
+git commit -m "commit $COMMIT $DESCRIPTION"
+git push origin -u $BRANCH
 git status
 
 exit
