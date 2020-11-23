@@ -13,15 +13,9 @@ git add .
 git status
 read -p "Enter commit name: " COMMIT
 git commit -m "commit $COMMIT"  
-
 read -p "Description? (press enter of add description): " DESCRIPTION
 
-if [ $DESCRIPTION != "" ]
-then
-	DESCRIPTION="-m ${DESCRIPTION}"
-fi
-
-git commit -m "commit $COMMIT $DESCRIPTION"
+git commit -m "commit $COMMIT" -m $DESCRIPTION
 git push origin -u $BRANCH
 git status
 
