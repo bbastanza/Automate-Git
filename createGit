@@ -7,7 +7,6 @@
 
 # to use this script replace all *directory-path* with your absolute path to the parent directory to your git projects
 
-
 echo "New Git Project"
 ls <Enter Git Directory Here>
 read -p "New Git Directory: " dirvar
