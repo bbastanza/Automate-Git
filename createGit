@@ -5,21 +5,29 @@
 # upon running the script will create a new Directory, initalize git, make an initial commit and push it to github
 # to the link you specify
 
-# to use this script replace all *directory-path* with your absolute path to the parent directory to your git projects
+# to use this script replace all /path/to/git/directory/ with your absolute path to the parent directory to your git projects
 
 echo "New Git Project"
-ls <Enter Git Directory Here>
-read -p "New Git Directory: " dirvar
-mkdir <Enter Git Directory Here>$dirvar
-cd <Enter Git Directory Here>$dirvar
+
+# EDIT PATH
+ls /path/to/git/directory/
+
+read -p "New Git Directory: " DIRECTORY
+
+# EDIT PATH
+mkdir /path/to/git/directory/$DIRECTORY
+
+# EDIT PATH
+cd /path/to/git/directory/$DIRECTORY
+
 touch .gitignore README.md
 git init
 git add -A
 git status
 git commit -m "initial commit"
 git branch -M main
-read -p "Enter Github Link: " linkvar
-git remote add origin $linkvar
+read -p "Enter Github Link: " LINK
+git remote add origin $LINK
 git push -u origin main
 git status
 echo "Done"
