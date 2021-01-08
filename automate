@@ -12,7 +12,6 @@ read -p "Which git directory: " FOLDER
 cd /path/to/git/foler/$FOLDER
 
 git branch
-read -p "Which branch: " BRANCH
 
 # EDIT PATH
 cd /path/to/git/foler/$FOLDER
@@ -23,7 +22,7 @@ read -p "Enter commit name: " COMMIT
 git commit -m "commit $COMMIT"  
 read -p "Description? (press enter of add description): " DESCRIPTION
 git commit -m "commit $COMMIT" -m "$DESCRIPTION"
-git push origin -u $BRANCH
+git push 
 git status
 
 exit
